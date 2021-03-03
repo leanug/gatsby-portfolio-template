@@ -35,17 +35,18 @@ const Wrapper = styled.aside`
       grid-auto-flow: row;
       grid-template-rows: auto auto auto 1fr;
       height: 100vh;
-      right: 0;
+      left: 0;
       min-width: 30rem;
       overflow-x: hidden;
       padding: 3rem 2rem;
       position: fixed;
       transition: all 0.2s ease-out;
-      transform: translateX(100%);
+      transform: translateX(-100%);
       top: 0;
       z-index: 999;
 
       a {
+        color: black;
         font-size: 2rem;
       }
 
@@ -68,12 +69,12 @@ const Wrapper = styled.aside`
       }
 
       .links-container {
-        border-top: 1px solid white;
         padding-top: 2rem;
       }
 
       footer {
         align-items: flex-end;
+        color: black;
         display: flex;
         font-size: 1.2rem;
         width: 100%;

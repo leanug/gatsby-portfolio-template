@@ -13,17 +13,17 @@ const Navbar = ({ toggleSidebar }) => {
             <div className="logo-wrap">
                 {/* <img src={logo} alt="logo" /> */}
                 <Link to="/">
-                    <span className="logo">OMEGA</span>
+                    <span className="logo">Erica Legrand</span>
                 </Link>
             </div>
             <div className="nav-links">
                 <Links styleClass="navbar-links" />
             </div>
-            <div>
+            <div className="icons">
                 <SocialLinks styleClass="social-icons-header" />
                 <button onClick={ toggleSidebar } className="toggle-btn">
-                <FaBars />
-            </button>
+                    <FaBars />
+                </button>
             </div>
         </NavCenter>    
     </Nav>
@@ -72,7 +72,6 @@ const NavCenter = styled.div`
   }
 
   .logo {
-    font-size: 1.8rem;
     font-weight: 700;
   }
 
@@ -80,12 +79,24 @@ const NavCenter = styled.div`
     display: none;
   }
 
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
   .toggle-btn {
-    font-size: 2rem;
     background: transparent;
     border-color: transparent;
+    color: white;
     cursor: pointer;
+    font-size: 2rem;
+    margin-left: 3rem;
     width: min-content;
+  }
+
+  a:hover {
+    color: #;
   }
 
   @media screen and (min-width: ${ setBreakpoint.medium }) {

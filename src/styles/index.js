@@ -8,7 +8,7 @@ export const setColor = {
     colorDelta_1: "#19191A",
     colorDelta_2: "#313133",
     colorDelta_3: "#1E1F23",
-    colorPi_1   : "#999999",
+    colorPi_1   : "#131313",
     colorPi_2   : "#666666",
     colorPi_3   : "#E3E3E3",
     colorPi_4   : "#F3F3F3",

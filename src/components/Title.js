@@ -11,10 +11,10 @@ const Title = ({ title, text }) => {
 }
 
 const Wrapper = styled.div`
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 
   h2 {
-    margin: 0 0 1.2rem 0;
+    text-align: center;
   }
 
   & > p {

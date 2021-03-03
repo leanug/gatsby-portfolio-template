@@ -2,6 +2,7 @@ import React from 'react';
 import Background from './Background'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from "gatsby"
+import { BsChevronDown } from 'react-icons/bs'
 
 const query = graphql`
   {
@@ -31,6 +32,7 @@ const Hero = () => {
                     <p>Creative Designs and Creative Works</p>
                     <h1>Minimalist and sustainable home and office decorations</h1>
                 </article>
+                <BsChevronDown />
             </Background>
         </Wrapper>
     );

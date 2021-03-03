@@ -1,17 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
 import Service from './Service'
-import services from '../../constants/services'
+import skills from '../../constants/services'
 
 const Services = () => {
     return (
         <Wrapper>
-            <div className="container">
-                <div className="services-row">
-                    <Service />
-                    <Service />
-                    <Service />
-                </div>
+            <div className="services-row">
+                { skills.map( skill => {
+                    const { id, title, text, icon } = skill
+                    return (
+                        <Service 
+                            key={ id } 
+                            title={title}
+                            text={text}
+                            icon={icon}
+                        />
+                    )
+                }) }
             </div>
         </Wrapper>
     )

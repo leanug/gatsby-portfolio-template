@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { setColor, setRadius } from '../styles/'
 
 export const Button = styled.button`
-    background-color: ${ setColor.colorDelta_1 };
+    background-color: ${ setColor.colorPi_1 };
     border: 1px solid ${ setColor.colorDelta_1 };
     border-radius: ${ setRadius.radiusBeta };
     color: ${ setColor.colorSigma };

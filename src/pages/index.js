@@ -4,6 +4,7 @@ import Contact from '../components/Contact'
 import Experience from '../components/Experience'
 import Hero from '../components/Hero'
 import Layout from '../components/Layout'
+import Projects from '../components/Projects'
 import SEO from '../components/SEO'
 import Services from '../components/Services'
 import Testimonial from '../components/Testimonial'
@@ -31,7 +32,7 @@ const IndexPage = () => (
         <div className="section-bg p-y">
             <div className="container">
                 <Title 
-                    title="services."
+                    title="skills."
                 />
                 <Services />
             </div>
@@ -44,8 +45,8 @@ const IndexPage = () => (
         </div>
         <div className="section-bg p-y">
             <div className="container">
-                <Title title="About me." />
-                <About />
+            <Title title="Projects." />
+            <Projects />
             </div>
         </div>
         <div className="container p-y">

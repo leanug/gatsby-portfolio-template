@@ -4,8 +4,8 @@ module.exports = {
     titleTemplate: "%s · Erica Legrand",
     description:
       "Hogwarts Potions master, Head of Slytherin house and former Death Eater.",
-    url: "https://omegainteriordesign.netlify.app", // No trailing slash allowed!
-    image: "/mainImg.jpg", // Path to your image you placed in the 'static' folder
+    url: "https://gatsfolio.netlify.app", // No trailing slash allowed!
+    image: "/screenshot.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "",
   },
   plugins: [
