@@ -6,7 +6,7 @@ import { BsChevronDown } from 'react-icons/bs'
 
 const query = graphql`
   {
-    file(relativePath: { eq: "home.png" }) {
+    file(relativePath: { eq: "home.jpg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 1920) {
           ...GatsbyImageSharpFluid
