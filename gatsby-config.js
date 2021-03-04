@@ -11,7 +11,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,6 +32,23 @@ module.exports = {
             maxWidth: 1200,
           },
         }],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Roboto",
+              variants: ["400", "500", "700"],
+              fontDisplay: 'swap',
+              strategy: 'selfHosted',
+            },
+          ],
+        },
+        useMinify: true,
+        usePreload: true,
       },
     },
   ],

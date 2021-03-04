@@ -12,7 +12,9 @@ const Projects = () => {
                     <div key={project.id}>
                         <h3>{project.title}</h3>
                         <p>{project.info}</p>
-                        <a href="https://github.com/leanug/gatsby-portfolio-template" title={project.title}>Source <BsArrowRight /></a>
+                        <div className="link-btn">
+                            <a href="https://github.com/leanug/gatsby-portfolio-template" title={project.title}>Source <BsArrowRight /></a>
+                        </div>
                     </div>
                 )
             })}
@@ -41,15 +43,11 @@ const Wrapper = styled.div`
         margin-bottom: 1rem;
     }
 
-    a {
+    .link-btn {
         background-color: ${ setColor.colorPi_1 };
-        padding: 1rem 2rem;
+        display: inline-block;
         height: 5rem;
-    }
-
-    a:hover {
-        background-color: ${ setColor.colorDelta_1 };
-        color: ${ setColor.colorSigma };
+        padding: 1rem 2rem;
     }
 `
 

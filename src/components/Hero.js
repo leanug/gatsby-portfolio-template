@@ -6,9 +6,9 @@ import { BsChevronDown } from 'react-icons/bs'
 
 const query = graphql`
   {
-    file(relativePath: { eq: "home.jpg" }) {
+    file(relativePath: { eq: "home.png" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 1920) {
+        fluid(quality: 100, maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -29,10 +29,11 @@ const Hero = () => {
                 image={ fluid }
             >
                 <article className="fade-in">
-                    <p>Creative Designs and Creative Works</p>
-                    <h1>Minimalist and sustainable home and office decorations</h1>
+                    <p>Hello, I'm Erica</p>
+                    <h1>Blockchain Software Developer</h1>
+                    
                 </article>
-                <BsChevronDown />
+                <BsChevronDown className="icon" />
             </Background>
         </Wrapper>
     );
@@ -62,6 +63,26 @@ const Wrapper = styled.div`
           h1 {
             letter-spacing: 5px;
           }
+        }
+    }
+
+    .icon {
+        margin: auto;
+        display: block;
+        font-size: 2rem;
+        position: absolute;
+        bottom: 5rem;
+
+        -webkit-animation: action 1s infinite  alternate;
+        animation: action 1s infinite  alternate;
+        
+        @-webkit-keyframes action {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        @keyframes action {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
         }
     }
 `

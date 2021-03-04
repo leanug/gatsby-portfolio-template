@@ -99,7 +99,7 @@ const Wrapper = styled.div`
 
     .quote-icon {
         border-radius: ${ setRadius.radiusBeta };
-        color: ${ setColor.colorDelta_2 };
+        color: ${ setColor.colorSigma };
         display: grid;
         font-size: 2.5rem;
         margin: auto;
@@ -137,18 +137,18 @@ const Wrapper = styled.div`
 
     .prev-btn,
     .next-btn {
-        font-size: 1.25rem;
-        background: ${ setColor.colorDelta_2 };
+        align-items: center;
+        background: ${ setColor.colorPi_3 };
         border-color: transparent;
         border-radius: ${ setRadius.radiusBeta };
         color: ${ setColor.colorSigma };
-        margin: 0 0.5rem;
-        height: 3rem;
-        width: 3rem;
         cursor: pointer;
+        font-size: 1.25rem;
+        margin: 0 0.5rem;
+        height: 4rem;
         display: flex;
-        align-items: center;
         justify-content: center;
+        width: 4rem;
     }
 `
 

@@ -1,16 +1,19 @@
 import { createGlobalStyle } from 'styled-components'
-import { setColor, setFont, setRadius, setBreakpoint, setSectionPadding } from '../styles/'
-import "@fontsource/rubik"
-import "@fontsource/rubik/500.css"
-import "@fontsource/rubik/700.css"
+import { 
+    setColor, 
+    setFont, 
+    setRadius, 
+    setBreakpoint, 
+    setSectionPadding, 
+    setTransition } from '../styles/'
 
 const Globals = createGlobalStyle`
     *,
     ::after,
     ::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
     }
 
     html {
@@ -19,7 +22,7 @@ const Globals = createGlobalStyle`
     }
 
     body {
-        background:  ${ setColor.colorDelta_1 };
+        background:  ${ setColor.colorPi_2 };
         color:       ${ setColor.colorSigma };
         font-family: ${ setFont.primaryFont };
         font-size: 1.5em;
@@ -33,10 +36,12 @@ const Globals = createGlobalStyle`
     a {
         color: ${ setColor.colorSigma };
         text-decoration: none;
+        ${ setTransition() };
+    }
 
-        &:hover {
-            color: ${ setColor.colorDelta_1 };
-        }
+    a:hover {
+        opacity: 0.6;
+        text-decoration: none;
     }
 
     h1,
@@ -78,7 +83,7 @@ const Globals = createGlobalStyle`
     }
 
     .section-bg {
-        background-color: ${ setColor.colorDelta_3 };
+        background-color: ${ setColor.colorPi_3 };
         width: 100%;
     }
 

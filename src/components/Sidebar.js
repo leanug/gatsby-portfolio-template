@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => (
           <SocialLinks styleClass="social-icons-sidebar" />
       </div>
       <footer>
-          <div>© 2021 OMEGA Architecture. All rights reserved</div> 
+          <div>© 2021 Erica Legrand. All rights reserved</div> 
       </footer>
     </Wrapper>
 )
@@ -46,8 +46,9 @@ const Wrapper = styled.aside`
       z-index: 999;
 
       a {
-        color: black;
-        font-size: 2rem;
+        color: ${ setColor.colorDelta_1 };
+        font-size: 1.5rem;
+        text-transform: uppercase;
       }
 
       .btn-container {

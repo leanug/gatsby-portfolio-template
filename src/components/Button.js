@@ -7,13 +7,11 @@ export const Button = styled.button`
     border-radius: ${ setRadius.radiusBeta };
     color: ${ setColor.colorSigma };
     font-size: 1.6rem;
-    padding: 1.5rem 3rem;
+    padding: 1.6rem 3rem;
     text-transform: capitalize;
     transition: all 0.2s linear;
 
     &:hover {
-        background-color: ${ setColor.colorDelta_3 };
-        color: ${ setColor.colorSigma };
         cursor: pointer;
     }
 `

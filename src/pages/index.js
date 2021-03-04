@@ -16,20 +16,20 @@ const IndexPage = () => (
             description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, suscipit?"
             title="Home"
         />
-        <Hero />
-        <div className="section-bg p-y">
+        <Hero id="home" />
+        <div id="about" className="section-bg p-y">
             <div className="container">
                 <Title title="About me." />
                 <About />
             </div>
         </div>
-        <div className="container p-y">
+        <div id="experience" className="container p-y">
             <Title 
                 title="experience."
             />
             <Experience />
         </div>
-        <div className="section-bg p-y">
+        <div id="skills" className="section-bg p-y">
             <div className="container">
                 <Title 
                     title="skills."
@@ -37,19 +37,19 @@ const IndexPage = () => (
                 <Services />
             </div>
         </div>
-        <div className="container p-y">
+        <div id="testimonials" className="container p-y">
             <Title 
                 title="What people say about me."
             />
             <Testimonial />
         </div>
-        <div className="section-bg p-y">
+        <div id="projects" className="section-bg p-y">
             <div className="container">
             <Title title="Projects." />
             <Projects />
             </div>
         </div>
-        <div className="container p-y">
+        <div id="contact" className="container p-y">
             <Title 
                 title="contact."
             />

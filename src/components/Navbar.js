@@ -3,7 +3,11 @@ import { Link } from 'gatsby'
 import { FaBars } from 'react-icons/fa'
 import Links from './Links'
 import styled from 'styled-components'
-import { setBreakpoint, setGridGap } from '../styles/'
+import { 
+  setBreakpoint, 
+  setGridGap, 
+  setColor,
+  setTransition } from '../styles/'
 import SocialLinks from '../constants/socialLinks'
 
 const Navbar = ({ toggleSidebar }) => {
@@ -88,15 +92,16 @@ const NavCenter = styled.div`
   .toggle-btn {
     background: transparent;
     border-color: transparent;
-    color: white;
+    color: ${ setColor.colorSigma };
     cursor: pointer;
     font-size: 2rem;
     margin-left: 3rem;
+    ${ setTransition() };
     width: min-content;
   }
 
-  a:hover {
-    color: #;
+  .toggle-btn:hover {
+    opacity: 0.6;
   }
 
   @media screen and (min-width: ${ setBreakpoint.medium }) {

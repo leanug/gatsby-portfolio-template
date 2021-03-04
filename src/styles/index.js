@@ -9,16 +9,16 @@ export const setColor = {
     colorDelta_2: "#313133",
     colorDelta_3: "#1E1F23",
     colorPi_1   : "#131313",
-    colorPi_2   : "#666666",
-    colorPi_3   : "#E3E3E3",
+    colorPi_2   : "#171717",
+    colorPi_3   : "#1C1D20",
     colorPi_4   : "#F3F3F3",
     colorPi_5   : "#F6F6F6",  
     colorSigma  : "#FFFFFF",
 }
 
 export const setFont = {
-    primaryFont  : '"Rubik"',
-    secondaryFont: '"Rubik"'
+    primaryFont  : '"Roboto"',
+    secondaryFont: '"Roboto"'
 }
 
 export const setPostMaxWidth = {
