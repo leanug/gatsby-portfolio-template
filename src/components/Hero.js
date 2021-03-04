@@ -6,7 +6,7 @@ import { BsChevronDown } from 'react-icons/bs'
 
 const query = graphql`
   {
-    file(relativePath: { eq: "home.jpg" }) {
+    file(relativePath: { eq: "home2.jpg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 1920) {
           ...GatsbyImageSharpFluid
@@ -30,8 +30,7 @@ const Hero = () => {
             >
                 <article className="fade-in">
                     <p>Hello, I'm Erica</p>
-                    <h1>Blockchain Software Developer</h1>
-                    
+                    <p className="h1">Blockchain Software Developer</p>
                 </article>
                 <BsChevronDown className="icon" />
             </Background>
@@ -46,13 +45,16 @@ const Wrapper = styled.div`
         text-align: center;
         
         p {
-          font-size: 1.6rem;
+            font-size: 1.8rem;
         }
 
-        h1 {
-          line-height: 1.25;
-          margin: 2rem 0 3rem 0;
-          letter-spacing: 3px;
+        .h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            line-height: 1.25;
+            letter-spacing: 3px;
+            margin: 2rem 0 3rem 0;
+            text-transform: uppercase;
         }
 
         h4 {

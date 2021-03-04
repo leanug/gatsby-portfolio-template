@@ -36,10 +36,11 @@ const Navbar = ({ toggleSidebar }) => {
 
 const Nav = styled.nav`
     display: flex;
-    background: transparent;
+    background: ${ setColor.colorPi_2 };
+    border-bottom: 1px solid ${ setColor.colorDelta_2 };
     justify-content: center;
-    position: absolute;
-    top: 0;
+    position: fixed;
+  top: 0;
     width: 100%;
     z-index: 10;
 `
@@ -48,7 +49,7 @@ const NavCenter = styled.div`
   align-items: center;
   width: 90vw;
   max-width: 1440px;
-  min-height: 10rem;
+  min-height: 8rem;
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;

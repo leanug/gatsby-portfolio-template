@@ -2,32 +2,37 @@ const links = [
   {
     id: 0,
     title: 'Home',
-    url: '/',
+    url: '#section-1',
   },
   {
     id: 1,
-    title: 'Skills',
-    url: '/skills',
+    title: 'About',
+    url: '#section-2',
   },
   {
     id: 2,
-    title: 'Projects',
-    url: '/projects',
+    title: 'Experience',
+    url: '#section-3',
   },
   {
-    id: 4,
-    title: 'About',
-    url: '/about',
+    id: 3,
+    title: 'Skills',
+    url: '#section-4',
   },
   {
     id: 4,
     title: 'Testimonials',
-    url: '/testimonials',
+    url: '#section-5',
+  },
+  {
+    id: 5,
+    title: 'Projects',
+    url: '#section-6',
   },
   {
     id: 6,
     title: 'Contact',
-    url: '/contact',
+    url: '#section-7',
   },
 ]
  
