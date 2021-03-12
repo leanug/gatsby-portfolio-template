@@ -16,49 +16,63 @@ const IndexPage = () => (
             description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, suscipit?"
             title="Home"
         />
-        <div id="section-1">
+        <section id="section-1">
             <Hero />
-        </div>
+        </section>
 
-        
-        <div id="section-2" className="section-bg p-y">
-            <div className="container">
-                <Title title="About me." />
-                <About />
-            </div>
-        </div>
-        <div id="section-3" className="container p-y">
-            <Title 
-                title="experience."
-            />
-            <Experience />
-        </div>
-        <div id="section-4" className="section-bg p-y">
+        <section id="section-2" className="section-bg p-y">
             <div className="container">
                 <Title 
-                    title="skills."
+                    title="About me." 
+                    text="Lorem ipsum dolor, sit amet consectetur" 
+                />
+                <About />
+            </div>
+        </section>
+
+        <section id="section-3" className="container p-y">
+            <Title 
+                title="Experience."
+                text="Lorem ipsum dolor, sit amet consectetur" 
+            />
+            <Experience />
+        </section>
+
+        <section id="section-4" className="section-bg p-y">
+            <div className="container">
+                <Title 
+                    title="Skills."
+                    text="Lorem ipsum dolor, sit amet consectetur" 
                 />
                 <Services />
             </div>
-        </div>
-        <div id="section-5" className="container p-y">
+        </section>
+
+        <section id="section-5" className="container p-y">
             <Title 
                 title="What people say about me."
+                text="Lorem ipsum dolor, sit amet consectetur" 
             />
             <Testimonial />
-        </div>
-        <div id="section-6" className="section-bg p-y">
+        </section>
+
+        <section id="section-6" className="section-bg p-y">
             <div className="container">
-            <Title title="Projects." />
+            <Title 
+                title="Latest projects." 
+                text="Lorem ipsum dolor, sit amet consectetur" 
+            />
             <Projects />
             </div>
-        </div>
-        <div id="section-7" className="container p-y">
+        </section>
+
+        <section id="section-7" className="container p-y">
             <Title 
-                title="contact."
+                title="Contact me."
+                text="Lorem ipsum dolor, sit amet consectetur" 
             />
             <Contact />
-        </div>
+        </section>
     </Layout>
 )
 

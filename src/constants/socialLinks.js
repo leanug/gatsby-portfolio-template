@@ -7,32 +7,6 @@ import {
 } from "react-icons/fa"
 import styled from "styled-components"
 
-const Wrapper = styled.div`
-  line-height: 1;
-
-  ul {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 2rem;
-  }
-
-  .social-icons-header {
-    justify-content: start;
-    font-size: 1.5rem;
-  }
-
-  .social-icons-sidebar {
-    justify-content: start;
-    font-size: 2rem;
-  }
-
-  .social-icons-footer {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      justify-content: center;
-  }
-`
-
 const SocialLinks = ({ styleClass = '.social-icons-header' } = {}) => (
   <Wrapper>
     <ul className={styleClass}>
@@ -42,7 +16,7 @@ const SocialLinks = ({ styleClass = '.social-icons-header' } = {}) => (
         </a>
       </li>
       <li>
-        <a href="https://twitter.com">
+        <a href="https://facebook.com">
           <FaFacebook className="social-icon"></FaFacebook>
         </a>
       </li>
@@ -52,12 +26,38 @@ const SocialLinks = ({ styleClass = '.social-icons-header' } = {}) => (
         </a>
       </li>
       <li>
-        <a href="https://github.com">
+        <a href="https://linkedin.com">
           <FaLinkedinIn className="social-icon"></FaLinkedinIn>
         </a>
       </li>
     </ul>
   </Wrapper>
 )
+
+const Wrapper = styled.div`
+    line-height: 1;
+
+    ul {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 2rem;
+    }
+
+    .social-icons-header {
+        justify-content: start;
+        font-size: 1.5rem;
+    }
+
+    .social-icons-sidebar {
+        justify-content: start;
+        font-size: 2rem;
+    }
+
+    .social-icons-footer {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+`
 
 export default SocialLinks

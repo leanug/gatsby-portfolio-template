@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import people from '../constants/testimonials';
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 import styled from 'styled-components'
-import { setColor, setRadius } from '../styles';
+import { setColor, setRadius, setTransition } from '../styles';
 
 const Testimonial = () => {
   const [ index, setIndex ] = useState( 0 )
@@ -99,7 +99,7 @@ const Wrapper = styled.div`
 
     .quote-icon {
         border-radius: ${ setRadius.radiusBeta };
-        color: ${ setColor.colorSigma };
+        color: ${ setColor.sigma };
         display: grid;
         font-size: 2.5rem;
         margin: auto;
@@ -138,17 +138,23 @@ const Wrapper = styled.div`
     .prev-btn,
     .next-btn {
         align-items: center;
-        background: ${ setColor.colorPi_3 };
+        background: ${ setColor.delta_3 };
         border-color: transparent;
         border-radius: ${ setRadius.radiusBeta };
-        color: ${ setColor.colorSigma };
+        color: ${ setColor.sigma };
         cursor: pointer;
         font-size: 1.25rem;
         margin: 0 0.5rem;
         height: 4rem;
         display: flex;
         justify-content: center;
+        ${ setTransition() };
         width: 4rem;
+    }
+
+    .prev-btn:hover,
+    .next-btn:hover {
+        background: ${ setColor.delta_2 };
     }
 `
 

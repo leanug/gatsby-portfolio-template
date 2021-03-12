@@ -29,8 +29,6 @@ const Links = ({ styleClass }) => {
                 )
             })}
               </Scrollspy>
-
-            
         </Wrapper>
     );
 };
@@ -47,6 +45,7 @@ const Wrapper = styled.div`
 
         a {
             margin: 0 0.5rem;
+            
         }
     }
 
@@ -59,15 +58,16 @@ const Wrapper = styled.div`
         display: block;
         font-size: 1.3rem;
         letter-spacing: 1px;
+        opacity: 0.7;
         transition: all 0.2s ease-out;
     }
 
     a:hover {
-        opacity: 0.6;
+        opacity: 1;
     }
 
     .is-current {
-        font-weight: 700;
+        opacity: 1;
     }
 `
 

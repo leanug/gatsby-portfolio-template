@@ -1,7 +1,10 @@
 import React from 'react';
 import { BsArrowRight } from "react-icons/bs"
 import projects from '../constants/projects'
-import { setBreakpoint, setColor } from '../styles'
+import { 
+    setBreakpoint, 
+    setColor, 
+    setRadius } from '../styles'
 import styled from 'styled-components'
 
 const Projects = () => {
@@ -12,9 +15,9 @@ const Projects = () => {
                     <div key={project.id}>
                         <h3>{project.title}</h3>
                         <p>{project.info}</p>
-                        <div className="link-btn">
+                        <button className="link-btn">
                             <a href="https://github.com/leanug/gatsby-portfolio-template" title={project.title}>Source <BsArrowRight /></a>
-                        </div>
+                        </button>
                     </div>
                 )
             })}
@@ -35,7 +38,6 @@ const Wrapper = styled.div`
     }
 
     svg {
-        font-size: ;
         margin-left: 1rem;
     }
 
@@ -44,7 +46,9 @@ const Wrapper = styled.div`
     }
 
     .link-btn {
-        background-color: ${ setColor.colorPi_1 };
+        background-color: ${ setColor.delta_1 };
+        border-radius: ${ setRadius.beta };
+        cursor: pointer;
         display: inline-block;
         height: 5rem;
         padding: 1rem 2rem;

@@ -36,11 +36,9 @@ const Navbar = ({ toggleSidebar }) => {
 
 const Nav = styled.nav`
     display: flex;
-    background: ${ setColor.colorPi_2 };
-    border-bottom: 1px solid ${ setColor.colorDelta_2 };
     justify-content: center;
     position: fixed;
-  top: 0;
+    top: 0;
     width: 100%;
     z-index: 10;
 `
@@ -93,7 +91,7 @@ const NavCenter = styled.div`
   .toggle-btn {
     background: transparent;
     border-color: transparent;
-    color: ${ setColor.colorSigma };
+    color: ${ setColor.sigma };
     cursor: pointer;
     font-size: 2rem;
     margin-left: 3rem;
@@ -120,7 +118,6 @@ const NavCenter = styled.div`
     .nav-links {
         justify-content: center;
         display: flex;
-        text-transform: uppercase;
     }
 
     .social-icons-header {
@@ -134,7 +131,6 @@ const NavCenter = styled.div`
 
     .page-link {
       font-weight: bold;
-      font-size: 1rem;
       cursor: pointer;
       padding: 0.25rem 0.5rem;
     }

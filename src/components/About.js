@@ -2,7 +2,10 @@ import React from 'react';
 import Image from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
-import { setGridGap, setRadius, setBreakpoint } from '../styles';
+import { 
+    setGridGap, 
+    setRadius, 
+    setBreakpoint } from '../styles';
 
 const query = graphql`
     {
@@ -34,7 +37,15 @@ const About = () => {
                 <p>
                     Sriracha selvage shaman copper mug air plant seitan fixie fingerstache lyft live-edge typewriter paleo tote bag enamel pin. 
                 </p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia voluptatem enim optio odio soluta. Aspernatur.</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia voluptatem enim optio odio soluta. Aspernatur.
+                </p>
+                <p>
+                    Say hi to me on <b><a href="twitter.com" title="twitter">Twitter</a></b>
+                </p>
+                <p>
+                    Find my projects on <b><a href="github.com" title="twitter">github</a></b>
+                </p>
             </div>
         </Wrapper>
     );
@@ -43,7 +54,7 @@ const About = () => {
 const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: ${ setGridGap.gridGapGamma };
+    grid-gap: ${ setGridGap.alpha };
 
     @media screen and ( max-width: ${ setBreakpoint.small } ) {
         display: block;

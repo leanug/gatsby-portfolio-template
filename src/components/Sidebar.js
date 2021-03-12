@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => (
 
 const Wrapper = styled.aside`
     &.sidebar {
-      background-color: ${ setColor.colorSigma };
+      background-color: ${ setColor.sigma };
       display: grid;
       grid-auto-flow: row;
       grid-template-rows: auto auto auto 1fr;
@@ -38,7 +38,7 @@ const Wrapper = styled.aside`
       left: 0;
       min-width: 30rem;
       overflow-x: hidden;
-      padding: 3rem 2rem;
+      padding: 3rem 3rem;
       position: fixed;
       transition: all 0.2s ease-out;
       transform: translateX(-100%);
@@ -46,20 +46,19 @@ const Wrapper = styled.aside`
       z-index: 999;
 
       a {
-        color: ${ setColor.colorDelta_1 };
-        font-size: 1.5rem;
-        text-transform: uppercase;
+        color: ${ setColor.delta_1 };
+        font-size: 1.7rem;
       }
 
       .btn-container {
         display: flex;
-        justify-content: right;
+        justify-content: flex-end;
       }
 
       .close-btn {
         background-color: transparent;
         border: none;
-        color: ${ setColor.colorDelta_1 };
+        color: ${ setColor.delta_1 };
         cursor: pointer;
         font-size: 3rem;
       }

@@ -3,12 +3,13 @@ import Background from './Background'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from "gatsby"
 import { BsChevronDown } from 'react-icons/bs'
+import { setColor, setBreakpoint } from '../styles';
 
 const query = graphql`
   {
-    file(relativePath: { eq: "home2.jpg" }) {
+    file(relativePath: { eq: "home.jpg" }) {
       childImageSharp {
-        fluid(quality: 100, maxWidth: 1920) {
+        fluid(quality: 100, maxWidth: 1200) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -28,43 +29,53 @@ const Hero = () => {
             <Background
                 image={ fluid }
             >
-                <article className="fade-in">
-                    <p>Hello, I'm Erica</p>
-                    <p className="h1">Blockchain Software Developer</p>
-                </article>
-                <BsChevronDown className="icon" />
+                <div className="fade-in container">
+                    <h1 className="display-1">
+                        <span>Hello, I'm Erica,</span><br />
+                        A blockchain software developer and interdisciplinary problem solver
+                    </h1>
+                    <BsChevronDown className="icon" />
+                </div>
             </Background>
         </Wrapper>
     );
 };
 
 const Wrapper = styled.div`
-    article {
-        width: 90vw;
-        max-width: 80rem;
-        text-align: center;
+    .container {
+        .display-1 {
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 1.3;
+        }
         
+        span {
+            color: ${ setColor.alpha };
+        }
+
         p {
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
 
         .h1 {
             font-weight: 700;
-            font-size: 2.5rem;
+            font-size: 4rem;
             line-height: 1.25;
             letter-spacing: 3px;
             margin: 2rem 0 3rem 0;
-            text-transform: uppercase;
         }
 
         h4 {
           font-weight: 400;
         }
 
-        @media (min-width: 800px) {
-          h1 {
-            letter-spacing: 5px;
-          }
+        @media screen and ( min-width: ${ setBreakpoint.small } ) {
+            .display-1 {
+                font-size: 7rem;
+                font-weight: 500;
+                line-height: 1.3;
+                letter-spacing: 3px;
+            }
         }
     }
 
@@ -72,7 +83,7 @@ const Wrapper = styled.div`
         margin: auto;
         display: block;
         font-size: 2rem;
-        position: absolute;
+        
         bottom: 5rem;
 
         -webkit-animation: action 1s infinite  alternate;

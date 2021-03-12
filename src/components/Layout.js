@@ -6,7 +6,7 @@
  */
 
 import React, { useState } from 'react'
-import Navbar from './Navbar'
+import MinimalistNavbar from './MinimalistNavbar'
 import Sidebar from './Sidebar'
 import Footer from './Footer'
 import GlobalStyles from './GlobalStyles'
@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
       <GlobalStyles />
       <Sidebar toggleSidebar={ toggleSidebar } isOpen={ isOpen } />
       <PageWrapper>
-        <Navbar toggleSidebar={ toggleSidebar }></Navbar>
+        <MinimalistNavbar toggleSidebar={ toggleSidebar }></MinimalistNavbar>
         <main>{ children }</main>
         <Footer />
       </PageWrapper>

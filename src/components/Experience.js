@@ -5,7 +5,9 @@ import styled from 'styled-components'
 import { 
     setColor, 
     setRadius, 
-    setContainer } from '../styles/'
+    setContainer, 
+    setTransition,
+    setBreakpoint } from '../styles/'
 
 function Jobs() {
   const [ value, setValue ] = useState(0)
@@ -55,8 +57,6 @@ const Wrapper = styled.section`
     }
 
     .btn-container {
-        background-color: ${ setColor.colorDelta_3 };
-        border-radius: ${ setRadius.radiusBeta };
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -67,23 +67,23 @@ const Wrapper = styled.section`
         background: transparent ;
         border-color: transparent;
         border-radius: ${ setRadius.radiusBeta };
+        color: ${ setColor.sigma };
         cursor: pointer;
         font-weight: 700;
         line-height: 1;
         margin: 1rem;
         padding: 1.2rem;
         text-transform: capitalize;
-        transition: var(--transition);
+        ${ setTransition() }
     }
 
     .job-btn:hover {
-        color: var(--clr-primary-5);
-        background-color: ${ setColor.colorDelta_3 };
+        background-color: ${ setColor.delta_2 };
     }
 
     .active-btn {
-        background-color: ${ setColor.colorDelta_3 };
-        color: ${ setColor.colorSigma };
+        background-color: ${ setColor.delta_2 };
+        color: ${ setColor.sigma };
     }
 
 .job-info h3 {
@@ -101,21 +101,16 @@ const Wrapper = styled.section`
     column-gap: 2rem;
     align-items: center;
     margin-bottom: 1.25rem;
-    background-color: ${ setColor.colorDelta_3 };
+    background-color: ${ setColor.delta_2 };
     padding: 1.5rem;
     border-radius: ${ setRadius.radiusBeta };
 }
 
 .job-desc p {
     margin-bottom: 0;
-    color: var(--clr-grey-3);
 }
 
-.job-icon {
-    color: var(--clr-primary-5);
-}
-
-@media screen and (min-width: 992px) {
+@media screen and ( min-width: ${ setBreakpoint.small } ) {
     .jobs-center {
         display: grid;
         grid-template-columns: 200px 1fr;
@@ -125,11 +120,10 @@ const Wrapper = styled.section`
     .btn-container {
         flex-direction: column;
         justify-content: flex-start;
-        padding: 1rem 0;
     }
 
     .job-btn {
-        margin: 1rem 2rem;
+        margin: 0 2rem 2rem 2rem;
     }
 }
 `
