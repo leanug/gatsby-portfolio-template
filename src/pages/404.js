@@ -4,15 +4,6 @@ import Layout from '../components/Layout'
 import styled from 'styled-components'
 import SEO from "../components/SEO"
 
-const Wrapper = styled.section`
-    margin: 14rem 0;  
-    text-align: center;
-
-    div {
-        margin-top:3rem;
-    }
-`
-
 const NotFoundPage = () => (
     <Layout>
         <SEO 
@@ -30,5 +21,14 @@ const NotFoundPage = () => (
         </Wrapper>
     </Layout>
 )
+
+const Wrapper = styled.section`
+    margin: 14rem 0;  
+    text-align: center;
+
+    div {
+        margin-top:3rem;
+    }
+`
 
 export default NotFoundPage

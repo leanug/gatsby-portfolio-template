@@ -15,9 +15,7 @@ const Projects = () => {
                     <div key={project.id}>
                         <h3>{project.title}</h3>
                         <p>{project.info}</p>
-                        <button className="link-btn">
-                            <a href="https://github.com/leanug/gatsby-portfolio-template" title={project.title}>Source <BsArrowRight /></a>
-                        </button>
+                        <a className="link-btn" href="https://github.com/leanug/gatsby-portfolio-template" title={project.title}>Source <BsArrowRight /></a>
                     </div>
                 )
             })}

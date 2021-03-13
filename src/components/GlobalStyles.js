@@ -39,6 +39,7 @@ const Globals = createGlobalStyle`
     }
 
     a:hover {
+        color: ${ setColor.alpha };
         text-decoration: none;
     }
 
@@ -48,7 +49,6 @@ const Globals = createGlobalStyle`
     h4,
     h5,
     h6 {
-        color: ${ setColor.sigma };
         font-family: ${ setFont.primaryFont };
         font-weight: 500;
         line-height: 1.25;

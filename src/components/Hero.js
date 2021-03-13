@@ -80,12 +80,13 @@ const Wrapper = styled.div`
     }
 
     .icon {
+        position: absolute;
+        bottom: 5rem;
+        left: 0;
+        right: 0;
         margin: auto;
         display: block;
         font-size: 2rem;
-        
-        bottom: 5rem;
-
         -webkit-animation: action 1s infinite  alternate;
         animation: action 1s infinite  alternate;
         

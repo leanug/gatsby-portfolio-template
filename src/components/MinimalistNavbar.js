@@ -78,7 +78,7 @@ const NavCenter = styled.div`
     }
 
     .toggle-btn:hover {
-        opacity: 0.6;
+        color: ${ setColor.alpha };
     }
 
     @media screen and (min-width: ${ setBreakpoint.medium }) {

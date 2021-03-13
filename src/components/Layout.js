@@ -7,9 +7,9 @@
 
 import React, { useState } from 'react'
 import MinimalistNavbar from './MinimalistNavbar'
-import Sidebar from './Sidebar'
 import Footer from './Footer'
 import GlobalStyles from './GlobalStyles'
+import Sidebar from './Sidebar'
 import styled from 'styled-components'
 
 const PageWrapper = styled.div`
@@ -20,6 +20,7 @@ const PageWrapper = styled.div`
 
 const Layout = ({ children }) => {
   const [ isOpen, setIsOpen ] = useState( false )
+
   const toggleSidebar = _=> {
     setIsOpen( ! isOpen )
   }
